@@ -6,8 +6,21 @@
 }
 
 .about-us_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     background-color: #28A745;
     padding: 79px 20px;
+
+    @media screen and (min-width: $tablet) {
+            padding: 62px 32px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding: 80px 20px;
+        }
+
 }
 
 .description_label {
