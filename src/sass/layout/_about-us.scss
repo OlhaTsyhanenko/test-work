@@ -1,0 +1,25 @@
+.about-us_wrap {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.about-us_description {
+    background-color: #28A745;
+    padding: 79px 20px;
+}
+
+.description_label {
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+        line-height: 1.375;
+    }
+}
+
+.description_title {
+    font-size: 32px;
+    line-height: 1.375;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
