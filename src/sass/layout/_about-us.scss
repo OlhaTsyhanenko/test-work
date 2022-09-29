@@ -5,6 +5,17 @@
     }
 }
 
+.about-us_img {
+    min-width: 320px;
+
+    @media screen and (min-width: $tablet) {
+        min-width: 368px;
+    }
+    @media screen and (min-width: $desktop) {
+        min-width: 670px;
+    }
+}
+
 .about-us_description {
     display: flex;
     flex-direction: column;
@@ -33,6 +44,12 @@
 .description_title {
     font-size: 32px;
     line-height: 1.375;
+    font-weight: 400;
     margin-top: 16px;
     margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
 }
