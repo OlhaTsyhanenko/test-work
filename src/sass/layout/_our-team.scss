@@ -1,0 +1,167 @@
+.section_our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 20px 50px 20px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 50px 32px 40px 32px;
+    }
+     @media screen and (min-width: $tablet) {
+        padding: 80px 28px 88px 28px;
+    }
+}
+
+.our-team_label {
+    color: var(--accentColor);
+    text-align: center;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+        line-height: 1.375;
+    }
+}
+
+.our-team_title {
+    font-size: 32px;
+    line-height: 1.375;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: var(--accentColor);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}
+
+.list_wrap {
+    margin-top: 63px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 36px;
+    }
+}
+
+.our-team_list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -18px;
+        margin-left: -18px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+}
+
+.item {
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+.img_wrap {
+    position: relative;
+    overflow: hidden;
+    &:hover,
+    &:focus {
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+
+        .our-team__socnetworks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(4, 4, 4, .5);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
+
+.our-team_img {
+    width: 280px;
+
+    @media screen and (min-width: $tablet) {
+        width: 223px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 420px;
+    }
+}
+
+.item_name {
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--accentColor);
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 32px;
+        line-height: 1;
+        }
+}
+
+.item_profession {
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    color: var(--accentColor);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+        line-height: 1.388;
+    }
+}
+
+.our-team__socnetworks {
+    display: none;
+
+}
+
+.socnetworks__icon:not(:last-child) {
+    margin-right: 25px;
+}
+
+.socnetworks__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--bgBodyColor);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--btnColor);
+    }
+}
+
+
+
