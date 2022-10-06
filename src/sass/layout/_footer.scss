@@ -1,0 +1,22 @@
+.footer {
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.footer_socnetworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .socnetworks_icon:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+.footer_copyright {
+    text-align: center;
+}
+
