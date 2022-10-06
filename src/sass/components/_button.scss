@@ -33,3 +33,15 @@
         color: #0284D0;
     }
 }
+
+.form_btn {
+    margin-top: 24px;
+    padding: 16px 56px;
+    background-color: var(--btnColor);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--hoverColor);
+    }
+}

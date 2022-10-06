@@ -148,6 +148,10 @@
 
 .socnetworks__icon:not(:last-child) {
     margin-right: 25px;
+
+    @media screen and (max-width: $desktop) {
+        margin-right: 15px;
+    }
 }
 
 .socnetworks__link {

@@ -19,6 +19,7 @@
 .blog-post_description {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
     align-items: start;
     background-color: #0284D0;
