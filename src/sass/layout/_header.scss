@@ -1,0 +1,59 @@
+.header_nav {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        transform-origin: left;
+    }
+
+}
+
+.logo_link {
+    margin-left: 4px;
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--btnColor);
+}
+
+.part-logo {
+    // color: var(--fontColor);
+    color: black;
+}
+
+
+
+.menu_list {
+    display: flex;
+}
+
+.menu_item:not(:last-child) {
+    margin-right: 12px;
+
+    @media screen and (min-width:$tablet) {
+        margin-right: 20px;
+    }
+}
+
+.menu_link {
+    // color: var(--fontColor);
+    color: black;
+    text-decoration: none;
+}
