@@ -6,6 +6,18 @@
     color: var(--fontColor)
 }
 
+.hero_btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--btnColor);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--hoverColor);
+    }
+}
+
 .btn-read {
     margin-top: 24px;
     border: 1px solid #FFFFFF;
